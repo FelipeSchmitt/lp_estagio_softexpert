@@ -1,16 +1,20 @@
+:root{
+    --text-sm: 1rem;
+    --text-md: 1.15rem;
+    --text-lg: 1.5rem;
+    --text-xl: 2.25rem;
+}
+
 html, body{
     margin: 0;
     padding: 0;
     font-family: 'Inter';
 }
-  
-
-.box-content{
+section .box-container{
     max-width: 1140px;
     display: block;
     margin: auto;
 }
-
 .first .logo{
     display: flex;
     justify-content: right;
@@ -47,7 +51,7 @@ html, body{
 }
 .first .banner-description h2{
     color: white;
-    font-size: 1.15rem;
+    font-size: var(--text-md);
     font-weight: 400;
     text-align: right;
 }
@@ -60,11 +64,11 @@ html, body{
 .first .challenger .description p{
     text-align: justify;
     color: white;
-    font-size: 1rem;
+    font-size: var(--text-sm);
     font-weight: 300;
 }
 .first .challenger .description p.uppercase{
-    font-size: 1.15rem;
+    font-size: var(--text-md);
     margin-block: 0;
 }
 .first .challenger .description p.cursive-challenge{
@@ -78,18 +82,21 @@ html, body{
 .first .challenger .image img{
     max-width: 100%;
 }
+.first .about-programm .about-image{
+    display: flex;
+}
 .first .about-programm .about-image img{
     width: 100%;
 }
 .first .about-programm .description p{
     color: white;
     text-align: justify;
-    font-size: 1rem;
+    font-size: var(--text-sm);
     font-weight: 300;
 }
 .first .about-programm .description .about-description{
     margin-block: 0;
-    font-size: 1.15rem;
+    font-size: var(--text-md);
     color: white;
 }
 .first .about-programm .description .programm-description{
@@ -100,6 +107,10 @@ html, body{
     margin-top: -1rem;
     font-family: cursive;
 }
+.first .about-programm .description p{
+    margin-block: 0;
+    padding-block: 0.75rem;
+}
 .two{
     background-color: #5181FF;
     padding: 2rem 0 2rem 0;
@@ -109,7 +120,7 @@ html, body{
     line-height: 0.6;
     text-align: center;
     color: white;
-    font-size: 1.15rem;
+    font-size: var(--text-md);
 }
 .two .title h2.align-right{
     padding-right: 8rem;
@@ -122,7 +133,7 @@ html, body{
 .two .hexagons{
     padding: 2rem 0 2rem 0;
     display: grid;
-    gap: 3rem;
+    gap: 4rem;
 }
 
 .two .hexagons .hex{
@@ -139,13 +150,13 @@ html, body{
 .two .hexagons .hex div{
     display: flex;
     align-items: center;
-    margin: 4.35rem 1.75rem 4rem 1.75rem;
+    margin: 3.3rem 1.75rem 4rem 1.75rem;
     width: 200px;
-    height: 150px;
+    height: 180px;
     line-clamp: 6;
     overflow: hidden;
     position: absolute;
-    font-size: 1rem;
+    font-size: var(--text-sm);
     line-height: 1.5;
     color: white;
 }
@@ -156,12 +167,15 @@ html, body{
 .three{
     background: linear-gradient(to bottom, #003EDE, #5181FF);
 }
+.three .expert-image{
+    display: none;
+}
 .three .title-one{
     padding-top: 2rem;
 }
 .three .title-one h2{
     margin-block: 0;
-    font-size: 1.15rem;
+    font-size: var(--text-md);
     color: white;
     text-align: center;
 }
@@ -196,7 +210,7 @@ html, body{
     padding-right: 0.75rem;
 }
 .three .benefits .benefit p{
-    font-size: 1rem;
+    font-size: var(--text-sm);
     font-weight: 400;
     color: white;
 }
@@ -215,13 +229,22 @@ html, body{
     display: flex;
     align-items: center;
 }
+.four .requirements .require div:nth-child(2){
+    flex-direction: row-reverse;
+}
+.four .requirements .require div:nth-child(4){
+    flex-direction: row-reverse;
+}
 .four .requirements .require div i img{
     width: 50px;
 }
 .four .requirements .require div p{
+    width: 100%;
     padding: 0.5rem 1rem;
     margin-left: 1rem;
-    font-size: 1rem;
+    margin-right: 1rem;
+    margin-block: 0.5rem;
+    font-size: var(--text-sm);
     color: white;
     border: solid 2px #82E1D9;
     border-radius: 0.5rem;
@@ -240,7 +263,7 @@ html, body{
 }
 .five .title h2:nth-child(1){
     padding-right: 4rem;
-    font-size: 1.15rem;
+    font-size: var(--text-md);
 }
 .five .title h2:nth-child(2){
     padding-left: 4rem;
@@ -265,7 +288,7 @@ html, body{
     text-align: center;
 }
 .five .process-selection .phase h3{
-    font-size: 1.15rem;
+    font-size: var(--text-md);
     margin-block: 0;
 }
 .five .process-selection .phase h3.orange{
@@ -275,6 +298,326 @@ html, body{
     color: #F8AC7A;
 }
 .five .process-selection .phase p{
-    font-size: 1.15rem;
+    font-size: var(--text-md);
     margin-block: 0;
+}
+.six{
+    background-color: #5181FF;
+    padding: 2rem 0;
+    background-image: url('images/map-mundi.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 960px;
+}
+.six .subscribe .title h2{
+    margin-block: 0;
+    color: white;
+    font-size: 1.5rem;
+}
+.six .subscribe .description p{
+    color: white;
+    font-size: var(--text-sm);
+}
+.six .areas .area{
+    display: flex;
+    align-items: center;
+    border: solid 3px;
+    position: relative;
+    border-radius: 0.75rem;
+    margin: 1.5rem;
+    background-color: white;
+}
+.six .areas .area:nth-child(1){
+    border-color: #FFAD2B;
+}
+.six .areas .area span{
+    color: white;
+    position: absolute;
+    padding: 0.25rem 1.5rem;
+    right: -1rem;
+    top: 0.5rem;
+    border-radius: 50rem;
+}
+.six .areas .area:nth-child(1) span{
+    background-color: #FFAD2B;
+}
+.six .areas .area:nth-child(2){
+    border-color: #52CC7B;
+}
+.six .areas .area:nth-child(2) span{
+    background-color: #52CC7B;
+}
+.six .areas .area:nth-child(3){
+    border-color: #60B7FF;
+}
+.six .areas .area:nth-child(3) span{
+    background-color: #60B7FF;
+}
+.six .areas .area:nth-child(4){
+    border-color: #FF7044;
+}
+.six .areas .area:nth-child(4) span{
+    background-color: #FF7044;
+}
+.six .areas .area:nth-child(5){
+    border-color: #FE5694;
+}
+.six .areas .area:nth-child(5) span{
+    background-color: #FE5694;
+}
+.six .areas .area i img{
+    height: 50px;
+    padding: 0.5rem;
+}
+.six .areas .area h3{
+    font-weight: 4\00;
+}
+.six .areas .area h3, .six .areas .area h4{
+    margin-block: 0;
+    font-size: var(--text-md);
+
+}
+.seven{
+    background-color: #5181FF;
+}
+.seven .cases{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+}
+.seven .cases .case{
+    width: 80%;
+    position: relative;
+    border: solid 2px;
+    border-collapse: collapse;
+    border-radius: 1rem;
+}
+.seven .cases .case:nth-child(1){
+    border-color: #FFBAB2;
+}
+.seven .cases .case:nth-child(1) .name{
+    border-color: #FFBAB2;
+}
+.seven .cases .case:nth-child(2){
+    border-color: #98D2E8;
+}
+.seven .cases .case:nth-child(2) .name{
+    border-color: #98D2E8;
+}
+.seven .cases .case:nth-child(3){
+    border-color: #F8AC7A;
+}
+.seven .cases .case:nth-child(3) .name{
+    border-color: #F8AC7A;
+}
+.seven .cases .case:nth-child(4){
+    border-color: #FEDC8A;
+}
+.seven .cases .case:nth-child(4) .name{
+    border-color: #FEDC8A;
+}
+.seven .cases .case img.avatar{
+    width: 100px;
+    position: absolute;
+    top: -2rem;
+    left: -1rem;
+}
+.seven .cases .case .name{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-bottom: solid 2px;
+}
+.seven .cases .case .name h2{
+    color: white;
+    font-size: var(--text-md);
+    text-align: center;
+    width: 100%;
+}
+.seven .cases .case .name i{
+    position: absolute;
+    right: 1rem;
+}
+.seven .cases .case .name i img{
+    height: 14px;
+}
+.seven .cases .case .description{
+    background-color: #003ede;
+    height: max-content;
+    padding: 0.75rem 1.5rem;
+    border-bottom-left-radius: 0.9rem;
+    border-bottom-right-radius: 0.9rem;
+}
+.seven .cases .case .description p{
+    text-align: center;
+    color: white;
+    font-size: var(--text-sm);
+    margin-block: 0;
+    padding-block: 0.5em;
+}
+
+
+@media screen and (min-width: 768px) {
+    .first .banner-title{
+        margin-top: -3rem;
+    }
+    .first .challenger{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .first .challenger{
+        padding-top: 2rem;
+    }
+    .first .challenger .description{
+        margin: 0 2rem;
+    }
+    .first .challenger .description p{
+        text-align: left;
+    }
+    .first .about-programm{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .first .about-programm .description{
+        padding-top: 4rem;
+    }
+    .two .hexagons{
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 0;
+        gap: 4rem;
+    }
+    .three{
+        padding-bottom: 2rem;
+    }
+    .three .expert-image{
+        display: none;
+    }
+    .three .expert-image img{
+        height: 600px;
+    }   
+    .three .benefits .benefit{
+        width: 250px;
+    }
+    .four{
+        padding: 2rem 0;
+    }
+    .four .requirements{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .four .requirements .requirements-trainee{
+        display: flex;
+        justify-content: end;
+    }
+    .four .requirements .requirements-trainee img{
+        width: 100%;
+    }
+    .five .process-selection .phase{
+        width: 180px;
+    }
+    .six .subscribe{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 1024px;
+    }
+    .six .subscribe .journey{
+        width: 50%;
+        align-content: center;
+        margin: auto;
+    }
+    .six .subscribe .journey .title h2{
+        font-size: var(--text-lg);
+    }
+    .six .subscribe .journey .description{
+        margin-top: 3rem;
+    }
+    .seven{
+        padding-top: 2rem;
+    }
+    .seven .cases{
+        justify-content: center;
+        max-width: 1024px;
+    }
+    .seven .cases .case{
+        width: 480px;
+    }
+    .seven .cases .case .name h2{
+        padding-right: 2rem;
+    }
+    .seven .cases .case .description{
+        height: 565px;
+    }
+
+}
+
+@media screen and (min-width: 1140px) {
+    :root{
+        --text-sm: 1.15rem;
+        --text-lg: 1.875rem;
+    }
+    .first .banner-title{
+        margin-top: -4.5rem;
+    }
+    .first .banner-title h1{
+        font-size: 3rem;
+    }   
+    .first .banner-image{
+        height: 420px;
+    }
+    .first .challenger .description{
+        margin: 0 2rem;
+        margin-top: 5vw;
+    }
+    .two .hexagons{
+        gap: 2rem;
+    }
+    .two .hexagons .hex > div p{
+        font-size: 1rem;
+    }
+    .two .hexagons .hex:nth-child(2){
+        margin-top: 8rem;
+    }
+    .two .hexagons .hex:nth-child(4){
+        margin-top: 8rem;
+    }
+    .three{
+        padding-bottom: 0;
+    }
+    .three .expert-image{
+        display: flex;
+    }
+    .three .benefits-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .three .benefits{
+        margin: auto;
+    }
+    .three .benefits .benefit{
+        width: 375px;
+    }
+    .four .requirements .requirements-trainee img{
+        width: 75%;
+    }
+    .five .process-selection .phase{
+        width: 120px;
+    }
+    .five .process-selection .phase:nth-child(2){
+        margin-top: 4rem;
+    }
+    .five .process-selection .phase:nth-child(4){
+        margin-top: 4rem;
+    }
+    .five .process-selection .phase:nth-child(6){
+        margin-top: 4rem;
+    }
+    .six .subscribe .journey{
+        margin: initial;
+    }
+    .seven .cases{
+        justify-content: space-between;
+        max-width: 1024px;
+    }
 }
