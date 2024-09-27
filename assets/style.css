@@ -178,6 +178,7 @@ section .box-container{
 }
 .three .top .title h2:nth-child(2){
     margin-top: -1rem;
+    font-size: 2.25rem;
     font-family: cursive;
     color: #FDA8C5;
 }
