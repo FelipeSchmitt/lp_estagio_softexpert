@@ -410,6 +410,7 @@ section .box-container{
 }
 .seven{
     background-color: #5181FF;
+    padding-bottom: 2rem;
 }
 .seven .cases{
     display: flex;
@@ -663,4 +664,11 @@ section .box-container{
         justify-content: space-between;
         max-width: 1024px;
     }
+}
+
+footer{
+    background-color: #003EDE;
+    padding: 2rem 0;
+    display: grid;
+    place-items: center;
 }
