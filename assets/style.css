@@ -2,7 +2,7 @@
     --text-sm: 1rem;
     --text-md: 1.15rem;
     --text-lg: 1.5rem;
-    --text-xl: 2.25rem;
+    --text-xl: 2.75rem;
 }
 
 html, body{
@@ -75,9 +75,10 @@ section .box-container{
     margin-block: 0;
     margin-top: -1rem;
     margin-left: 4rem;
-    font-family: cursive;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 500;
     color: #82E1D9;
-    font-size: 2.25rem;
+    font-size: 2.75rem;
 }
 .first .challenger .image img{
     max-width: 100%;
@@ -100,12 +101,13 @@ section .box-container{
     color: white;
 }
 .first .about-programm .description .programm-description{
-    font-size: 2.25rem;
+    font-size: 2.75rem;
     color: #F8AC7A;
     margin-block: 0;
     margin-left: 2.5rem;
     margin-top: -1rem;
-    font-family: cursive;
+    font-weight: 500;
+    font-family: 'Dancing Script', cursive;
 }
 .first .about-programm .description p{
     margin-block: 0;
@@ -126,8 +128,9 @@ section .box-container{
     padding-right: 8rem;
 }
 .two .title h2 .mark{
-    font-family: cursive;
-    font-size: 2.25rem;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 500;
+    font-size: 2.75rem;
     color: #82E1D9;
 }
 .two .hexagons{
@@ -178,8 +181,9 @@ section .box-container{
 }
 .three .top .title h2:nth-child(2){
     margin-top: -1rem;
-    font-size: 2.25rem;
-    font-family: cursive;
+    font-size: 2.75rem;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 500;
     color: #FDA8C5;
 }
 .three .top .description p{
@@ -202,8 +206,9 @@ section .box-container{
     padding-right: 10rem;
 }
 .three .title-one h2:nth-child(2){
-    font-family: cursive;
-    font-size: 2.25rem;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 500;
+    font-size: 2.75rem;
     margin-top: -1rem;
     color: #FDA8C5;
 }
@@ -240,8 +245,9 @@ section .box-container{
 .four .requirements .title h2{
     margin-block: 0;
     color: #82E1D9;
-    font-family: cursive;
-    font-size: 2.25rem;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 500;
+    font-size: 2.75rem;
     text-align: center;
 }
 .four .requirements .require div{
@@ -286,8 +292,9 @@ section .box-container{
 }
 .five .title h2:nth-child(2){
     padding-left: 4rem;
-    font-family: cursive;
-    font-size: 2.25rem;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 500;
+    font-size: 2.75rem;
     color: #F8AC7A;
     margin-top: -1rem;
 }
