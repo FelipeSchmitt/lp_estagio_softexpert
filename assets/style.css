@@ -17,8 +17,10 @@ section .box-container{
 }
 .first .logo{
     display: flex;
-    justify-content: right;
+    justify-content: left;
     padding: 1rem 0.75rem 1rem 0;
+    max-width: 1140px;
+    margin: auto;
 }
 .first{
     position: relative;
@@ -34,7 +36,7 @@ section .box-container{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 0 -5rem;
+    object-position: top;
     filter: opacity(0.5);
 }
 .first .banner-title{
@@ -493,6 +495,9 @@ section .box-container{
 
 
 @media screen and (min-width: 768px) {
+    .first .banner-image img{
+        object-position: 0 -8rem;
+    }
     .first .banner-title{
         margin-top: -3rem;
     }
