@@ -34,7 +34,7 @@ section .box-container{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: top;
+    object-position: 0 -5rem;
     filter: opacity(0.5);
 }
 .first .banner-title{
@@ -608,7 +608,7 @@ section .box-container{
         font-size: 3rem;
     }   
     .first .banner-image{
-        height: 650px;
+        height: 550px;
     }
     .first .challenger .description{
         margin: 0 2rem;
